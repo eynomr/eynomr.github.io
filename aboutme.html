@@ -3,65 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/aboutme.css">
   <title>About Me!</title>
 </head>
 <body>
+  <nav class="navbar">
+    <a class="navbar-item-main" href="./">@EYNOMR</a>
+    <div class="navbar-items">
+      <a class="navbar-item" href="./index.html">home</a>
+      <a class="navbar-item" href="./aboutme.html">about me</a>
+      <a class="navbar-item" href="./contactme.html">contact me</a>
+    </div>
+</nav>
   <header>
-    <h1>
+    <h1 class="aboutme-title">
       <code>def aboutme():</code>
     </h1>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./aboutme.html">About Me</a></li>
-      <li><a href="./contactme.html">Contact Me</a></li>
-    </ul>
-  </nav>
 
   <main>
-    <h2>About me</h2>
-    <p>I am a <mark>Full Stack Developer</mark> with expertise in various technologies. This page is dedicated to providing information about my background, skills, and experiences.</p>
+    <div class="main-content">
+      <p>I am a Full Stack Developer with expertise in various technologies. This page is dedicated to providing information about my background, skills, and experiences.</p>
+    </div>
     <hr/>
-    <h3><strong>Programming Languages:</strong></h3>
-    <ol>
-      <li>Python</li>
-      <li>Javascript</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>C++</li>
-      <li>SQL</li>
-    </ol>
-    <hr/>
-    <h3><strong>Web Development Skills:</strong></h3>
-    <ol>
-      <li>React</li>
-      <li>Node.js</li>
-      <li>Flask</li>
-      <li>RESTful API</li>
-      <li>Responsive Web Design</li>
-    </ol>
-    <hr/>
-    <h3><strong>Data Analytics Skills:</strong></h3>
-    <ol>
-      <li>Relational Databases</li>
-      <li>NoSQL Databases</li>
-      <li>Tableau</li>
-      <li>Alteryx</li>
-      <li>Big Query</li>
-    </ol>
-    <hr/>
-    <h3><strong>Other Techincal Skills:</strong></h3>
-    <ol>
-      <li>Version Control</li>
-      <li>CI/CD</li>
-      <li>Docker</li>
-      <li>Kubernetes</li>
-      <li>Aile Methodologies</li>
-      <li>Project Management</li>
-    </ol>
-    <hr/>
+
+    <div class="card-container">
+      <div>
+        <div class="card">
+          <h3 class="card-title">Programming Languages</h3>
+          <div class="card-item-group">
+            <div>
+              <p class="card-item">Python</p>
+              <p class="card-item">Javascript</p>
+              <p class="card-item">HTML</p>
+            </div>
+            <div>
+              <p class="card-item">CSS</p>
+              <p class="card-item">C++</p>
+              <p class="card-item">SQL</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card">
+            <h3 class="card-title">Web Development Skills</h3>
+                <p class="card-item">React</p>
+                <p class="card-item">Node.js</p>
+                <p class="card-item">Flask</p>
+                <p class="card-item">RESTful API</p>
+                <p class="card-item">Responsive Web Design</p>
+        </div>
+    
+        <div class="card">
+          <h3 class="card-title">Data Analytics Skills</h3>
+            <p class="card-item">Relational Databases</p>
+            <p class="card-item">NoSQL Databases</p>
+            <p class="card-item">Tableau</p>
+            <p class="card-item">Alteryx</p>
+            <p class="card-item">Big Query</p>
+        </div>
+      </div>
+      <div>
+        
+      </div>
+    </div>
+
+
+    <div class="card">
+      <h3 class="card-title">Other Techincal Skills</h3>
+      <div class="card-item-group">
+        <div>
+          <p class="card-item">Version Control</p>
+          <p class="card-item">CI/CD</p>
+          <p class="card-item">Docker</p>
+        </div>
+        <div>
+          <p class="card-item">Kubernetes</p>
+          <p class="card-item">Ajile Methodologies</p>
+          <p class="card-item">Project Management</p>
+        </div>
+      </div>
+    </div>
+
+
     <h3>Currently Watching/Reading:</h3>
     <dl>
       <dt>Asohka</dt>

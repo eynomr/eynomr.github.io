@@ -4,25 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ali's Portfolio</title>
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to my website!</h1>
-  </header>
-  
-  <nav>
-    <ul>
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./aboutme.html">About Me</a></li>
-      <li><a href="./contactme.html">Contact Me</a></li>
-    </ul>
+  <nav class="navbar">
+      <a class="navbar-item-main" href="./">@EYNOMR</a>
+      <div class="navbar-items">
+        <a class="navbar-item" href="./index.html">home</a>
+        <a class="navbar-item" href="./aboutme.html">about me</a>
+        <a class="navbar-item" href="./contactme.html">contact me</a>
+      </div>
   </nav>
 
+  <!-- <header class="main-header">
+    <h1>Welcome to my website!</h1>
+  </header>
+   -->
+
   <main>
-    <h2>
-      Hey there! I am Ali.
-    </h2>
-    <p>This is the homepage of my portfolio. You can find more information about me and how to contact me through the links above.</p>
+    <div class="hero"> 
+      <h2 class="hero-title">
+        hey there! i am ali
+      </h2>
+      <p class="hero-content">designing and building modern fullscale <span class="hero-highlight">web applications</span>, and looking at <span class="hero-highlight">data</span> on the side.</p>
+      <div class="btn">
+        <a class="btn-txt" href="./aboutme.html" class="aboutme-button">learn more</a>
+      </div>
+    </div>
+    
   </main>
 
   <footer>
