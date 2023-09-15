@@ -5,6 +5,11 @@ html, body{
   font-family: 'OutfitFont', sans-serif;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+}
+
 
 .navbar{
   display: flex;
@@ -40,13 +45,13 @@ display: flex;
   text-align: center; 
   padding: 14px 16px; 
   text-decoration: none; 
-  transition: 0.2s ease;
+  transition: 0.2s ease-in-out;
   letter-spacing: -1px;
 }
 
 .navbar-item:hover{
   color: rgb(255, 255, 255);
-  transition: 0.2s ease;
+  transition: 0.2s ease-in-out;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 18px;
@@ -55,7 +60,7 @@ display: flex;
 
 footer{
   bottom: 0;
-  padding-left: 10px;
+  padding-left: 250px;
   display: flex;
   align-items: center;
   height: 50px;
@@ -71,6 +76,7 @@ footer{
 }
 
 main {
+  flex: 1;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -79,7 +85,7 @@ main {
 
 .hero{
   color: #000000;
-  width: 900px;
+  width: 1000px;
   padding: 10px;
 }
 
@@ -93,7 +99,7 @@ main {
 }
 
 .hero-content{
-  font-size: 50px;
+  font-size: 80px;
   font-weight: 900;
   margin: 0;
   padding: 0;
@@ -112,17 +118,19 @@ main {
   background-color: #353535;
   color: #ffffff;
   border: none;
-  width: 80px;
+  width: 180px;
+  height: 60px;
   border-radius: 10px;
   padding: 10px;
   font-size: 18px;
   font-weight: 200;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 
 .btn-txt{
   color: #ffffff;
+  font-size: 30px;
   text-decoration: none;
   cursor: pointer;
   letter-spacing: -1.5px;
@@ -133,10 +141,11 @@ main {
   transition: 0.3s ease-in;
   display: flex;
   color: #ffffff;
-  width: 120px;
+  width: 200px;
+  height: 70px;
   border-radius: 0px;
   padding: 15px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 400;
   cursor: pointer;
 }

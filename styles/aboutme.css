@@ -66,19 +66,47 @@ footer{
 .aboutme-title{
   font-size: 20px;
   font-weight: 900;
-  margin: 0;
+  margin-left: 10px;
   padding: 0;
   margin-bottom: 10px;
   letter-spacing: -1.5px;
+}
+.main-container{
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content{
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -2px;
+}
+
+.main-highlight{
+  color: #284b63;
+}
+
+.card-container{
+  display: flex;
+  width: 90%;
+  margin-top: 40px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .card{
   display: flex;
   flex-direction: column;
   width: 250px;
+  height: 150px;
   background-color: #ffffff;
   color:#000000;
-  border-radius: 10px;
   border: 2px solid #284b63;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -86,6 +114,14 @@ footer{
   align-items: center;
   padding: 20px;
   margin: 20px auto;
+  transition: 0.2s ease;
+}
+
+.card:hover{
+  transition: 0.2s ease;
+  border-radius: 10px;
+  background-color: #284b63;
+  color: #ffffff;
 }
 
 .card-title{
@@ -111,4 +147,51 @@ footer{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+
+.btn{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #353535;
+  color: #ffffff;
+  border: none;
+  width: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-txt{
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: -1.2px;
+}
+
+.btn:hover{
+  background-color: #284b63;
+  transition: 0.3s ease-in;
+  display: flex;
+  color: #ffffff;
+  width: 120px;
+  border-radius: 0px;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.quote{
+  letter-spacing: -1.2px;
+}
+
+.quote:hover{
+  font-size: 20px;
+  transition: 0.1s ease-in;
 }
