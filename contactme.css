@@ -3,6 +3,8 @@ html, body{
   margin: 0;
   padding: 0;
   font-family: 'OutfitFont', sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }
 
 body{

@@ -155,7 +155,6 @@ main {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 .card{
   flex: 0 0 auto;
   width: 250px;
@@ -205,7 +204,6 @@ main {
   align-items: center;
   justify-content: space-between;
 }
-
 
 .btn{
   margin-top: 50px;
