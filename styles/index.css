@@ -26,6 +26,7 @@ body{
   float: left; 
   display: block; 
   font-size: 20px;
+  height: 30px;
   font-weight: 900;
   color: white; 
   text-align: center; 
@@ -61,18 +62,13 @@ display: flex;
 footer{
   bottom: 0;
   padding-left: 250px;
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   height: 50px;
   background-color: #284b63;
   color: #ffffff;
-}
-
-.main-header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000000;
 }
 
 main {
@@ -148,4 +144,56 @@ main {
   font-size: 25px;
   font-weight: 400;
   cursor: pointer;
+}
+
+/* Add this at the end of your CSS file */
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px; 
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-items {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-item {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+
+  footer{
+    padding-left: 10px;
+  }
+  
+  .btn {
+    width: 90px; 
+    height: 20px;
+  }
+
+  .btn-txt{
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: -1.2px;
+  }
+
+  .hero-content {
+    font-size: 40px; /* Adjust the font size for smaller screens */
+  }
 }

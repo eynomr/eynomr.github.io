@@ -5,6 +5,11 @@ html, body{
   font-family: 'OutfitFont', sans-serif;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+}
+
 
 .navbar{
   display: flex;
@@ -40,13 +45,13 @@ display: flex;
   text-align: center; 
   padding: 14px 16px; 
   text-decoration: none; 
-  transition: 0.2s ease;
+  transition: 0.2s ease-in-out;
   letter-spacing: -1px;
 }
 
 .navbar-item:hover{
   color: rgb(255, 255, 255);
-  transition: 0.2s ease;
+  transition: 0.2s ease-in-out;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 18px;
@@ -55,12 +60,52 @@ display: flex;
 
 footer{
   bottom: 0;
-  padding-left: 10px;
+  padding-left: 250px;
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   height: 50px;
   background-color: #284b63;
   color: #ffffff;
+}
+
+main {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container{
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  width: 1000px;
+  padding: 10px;
+}
+
+.header-title{
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  letter-spacing: -1.5px;
+}
+
+.header-content{
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1.5px;
+}
+
+.header-highlight {
+  color: #284b63;
 }
 
 .aboutme-title{
@@ -88,32 +133,44 @@ footer{
   letter-spacing: -2px;
 }
 
+.main-title{
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  letter-spacing: -1.5px;
+}
+
 .main-highlight{
   color: #284b63;
 }
 
 .card-container{
   display: flex;
-  width: 90%;
-  margin-top: 40px;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px;
+  width: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .card{
-  display: flex;
-  flex-direction: column;
+  flex: 0 0 auto;
   width: 250px;
   height: 150px;
-  background-color: #ffffff;
+  background: #e6e9f0;
+  background: -webkit-linear-gradient(to right, rgba(230,233,240,0.5), rgba(238,241,245,0.5));
+  background: linear-gradient(to right, rgba(230,233,240,0.5), rgba(238,241,245,0.5));
   color:#000000;
-  border: 2px solid #284b63;
+  border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin: 20px auto;
+  margin-right: 10px;
   transition: 0.2s ease;
 }
 
@@ -158,10 +215,11 @@ footer{
   background-color: #353535;
   color: #ffffff;
   border: none;
-  width: 100px;
+  width: 180px;
+  height: 60px;
   border-radius: 10px;
   padding: 10px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 200;
   cursor: pointer;
   transition: 0.3s ease;
@@ -179,19 +237,100 @@ footer{
   transition: 0.3s ease-in;
   display: flex;
   color: #ffffff;
-  width: 120px;
+  width: 200px;
+  height: 70px;
   border-radius: 0px;
   padding: 15px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   cursor: pointer;
 }
 
 .quote{
+  margin-top: 40px;
   letter-spacing: -1.2px;
 }
 
 .quote:hover{
   font-size: 20px;
   transition: 0.1s ease-in;
+}
+
+/* Add this at the end of your CSS file */
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .navbar-item-main {
+    font-size: 16px;
+  }
+
+  .navbar-item {
+    font-size: 14px;
+  }
+
+  .header-container {
+    width: 90%;
+    text-align: center;
+  }
+
+  .header-title,
+  .header-content {
+    font-size: 18px;
+  }
+
+  .main-container {
+    width: 90%;
+  }
+
+  .main-content {
+    font-size: 24px;
+  }
+
+  .main-title {
+    font-size: 18px;
+  }
+
+  .card-container {
+    width: 90%;
+    padding: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: scroll;
+  }
+
+  .card {
+    width: 200px;
+    height: 120px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .card-item,
+  .card-item-group {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100px;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .btn-txt {
+    font-size: 16px;
+  }
+
+  .quote {
+    margin-top: 40px;
+    font-size: 14px;
+  }
 }

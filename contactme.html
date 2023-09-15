@@ -15,28 +15,47 @@
       <a class="navbar-item" href="./contactme.html">contact me</a>
     </div>
 </nav>
-  <header>
-    <h1 class="contactme-title">
-      <code>def contactme():</code>
-    </h1>
-  </header>
   <main>
-    <h2>Contact Information</h2>
-    <p>Get in touch with me!</p>
-    <ul>
-        <li>Email: a99omrani@gmail.com</li>
-        <li><a href="https://www.linkedin.com/in/aomrani/">Linkedin</a></li>
-    </ul>
-    <div>
-      <form>
-        <label>Name:</label>
-        <input type="text" id="name" required><br>
-        <label>Email:</label>
-        <input type="email" id="email" required><br>
-        <label>Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea><br>
-      </form>
+    <div class="main-container">
+      <div class="header-container">
+        <h2 class="header-title">
+          <code>def contactme():</code>
+        </h2>
+        <p class="header-content">Get in touch with me!</p>
+      </div>
+      
+        <div class="form-container">
+          <form class="contact-form">
+            <h2 class="form-title">lets get in touch!</h2>
+            <div class="form-items">
+              <label class="form-label">Name</label>
+              <input class="form-input" type="text" id="name" required><br>
+            </div>
+            <div class="form-items">
+              <label class="form-label">Email</label>
+              <input class="form-input" type="email" id="email" required><br>
+            </div>
+            <div class="form-items">
+              <label class="form-label">Message</label>
+              <textarea class="form-input" id="message" name="message" rows="4" required></textarea><br>
+            </div>
+            <div class="btn-container">
+              <div class="btn">
+                <a class="btn-txt" class="aboutme-button">Submit</a>
+              </div>
+              <div class="or">or</div>
+              <div class="contact-info-container">
+                <ul class="contact-info">
+                    <li><a href="mailto:a99omrani@gmail.com">Email</a></li>
+                    <li><a href="https://www.linkedin.com/in/aomrani/">Linkedin</a></li>
+                    <li><a href="https://github.com/eynomr">GitHub</a></li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
     </div>
+  </div>
 </main>
   <footer>
     <p>&copy; 2023 Ali Omrani</p>
