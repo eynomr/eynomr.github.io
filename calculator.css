@@ -1,0 +1,151 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'OutfitFont', sans-serif;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background-color: #284b63; 
+  overflow: hidden;
+  align-items: center;
+  padding: 5px;
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.navbar-item-main{
+  float: left; 
+  display: block; 
+  font-size: 20px;
+  font-weight: 900;
+  color: white; 
+  text-align: center; 
+  padding: 14px 16px; 
+  text-decoration: none; 
+  letter-spacing: -1px;
+}
+
+.navbar-items{
+display: flex;
+}
+
+.navbar-item{
+  float: right; 
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 16px; 
+  text-decoration: none; 
+  transition: 0.2s ease-in-out;
+  letter-spacing: -1px;
+}
+
+.navbar-item:hover{
+  color: rgb(255, 255, 255);
+  transition: 0.2s ease-in-out;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+footer{
+  bottom: 0;
+  padding-left: 250px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: #284b63;
+  color: #ffffff;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 10px;
+}
+
+.calculator{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 280px;
+  width: 230px;
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.calculator-display{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  width: 220px;
+  padding-left: 10px;
+  background-color: #284b63;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.calculator-buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.calculator-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 4px;
+  border-radius: 15px;
+}
+
+.number{
+  background-color: #ffffff;
+}
+
+.number:hover{
+  background-color: #284b63;
+  color: #ffffff;
+  transition: 0.1s ease-in-out;
+}
+
+.operator{
+  background-color: #284b63;
+}
+
+.operator:hover{
+  background-color: #ffffff;
+  color: #284b63;
+  transition: 0.1s ease-in-out;
+}
+
+.red{
+  background-color: red;
+}
+
+.red:hover{
+  background-color: #284b63;
+  color: #ffffff;
+  transition: 0.1s ease-in-out;
+}
